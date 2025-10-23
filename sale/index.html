@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Туристическое снаряжение - Интернет-магазин TrekS</title>
+    <meta name="description" content="🛒 Продажа туристического снаряжения: Рюкзаки, палатки, спальники, снаряжение для сплава и снегоходов. Лучшие цены с гарантией качества">
+    <link rel="canonical" href="https://treks.2828.ru/sale">
+   <meta property="og:title" content="Туристическое снаряжение - Интернет-магазин TrekS">
+    <meta property="og:description" content="🛒 Лучшие цены на туристическое снаряжение с гарантией качества! Доставка по всей России">
+<!--    <meta property="og:image" content="https://treks.2828.ru/img/og-banner.jpg"> -->
+    <meta property="og:url" content="https://treks.2828.ru/sale">
+    <style>
+        :root {
+            /* Цветовая схема */
+            --primary: #2A5F7F;
+            --secondary: #5DA9DD;
+            --accent: #FF6B35;
+            --light: #F8F9FA;
+            --dark: #1A2B3C;
+            --text: #2D3748;
+            
+            /* Типографика */
+            --font-base: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            --text-md: 1rem;
+            --text-lg: 1.125rem;
+            --text-xl: 1.25rem;
+            --heading-2: 1.75rem;
+            
+            /* Отступы */
+            --space-sm: 0.5rem;
+            --space-md: 1rem;
+            --space-lg: 1.5rem;
+            --space-xl: 2rem;
+            
+            /* Границы */
+            --radius: 8px;
+            --border: 1px solid #E2E8F0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-base);
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--light);
+            padding-bottom: var(--space-xl);
+        }
+        
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+        }
+        
+        /* Шапка */
+        .page-header {
+            background: var(--primary);
+            color: white;
+            padding: var(--space-lg) 0;
+            margin-bottom: var(--space-xl);
+        }
+        
+        .page-header h1 {
+            font-size: 2rem;
+            margin-bottom: var(--space-sm);
+        }
+        
+        /* Основной контент */
+        .intro-section {
+            background: white;
+            padding: var(--space-xl);
+            border-radius: var(--radius);
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            margin-bottom: var(--space-xl);
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-md);
+            margin: var(--space-xl) 0;
+        }
+        
+        .benefit-card {
+            padding: var(--space-md);
+            background: white;
+            border-radius: var(--radius);
+            border: var(--border);
+            text-align: center;
+        }
+        
+        /* Таблицы */
+        .price-section {
+            margin: var(--space-xl) 0;
+        }
+        
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .price-table th {
+            background: var(--primary);
+            color: white;
+            padding: var(--space-md);
+            text-align: left;
+        }
+        
+        .price-table td {
+            padding: var(--space-md);
+            border-bottom: var(--border);
+        }
+        
+        .price-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .price {
+            color: var(--accent);
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .price-table {
+                display: block;
+                overflow-x: auto;
+            }
+            
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .intro-section {
+                padding: var(--space-md);
+            }
+        }
+        
+        /* SEO текст */
+        .seo-content {
+            margin: var(--space-xl) 0;
+            background: white;
+            padding: var(--space-xl);
+            border-radius: var(--radius);
+        }
+        
+        .seo-content h2 {
+            color: var(--primary);
+            margin-bottom: var(--space-md);
+        }
+    </style>
+</head>
+<body itemscope itemtype="http://schema.org/WebPage">
+    <header class="page-header">
+        <div class="container">
+            <h1 itemprop="name">Интернет-магазин туристического снаряжения TrekS</h1>
+            <p>Более 500 наименований снаряжения от проверенных производителей</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section class="intro-section" itemprop="mainContentOfPage">
+            <h2>Почему выбирают нас?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>🚚 Быстрая доставка</h3>
+                    <p>Отправка заказов в день оформления. <a href="delivery">Доставка по всей России</a>
+                </div>
+                <div class="benefit-card">
+                    <h3>🔒 Гарантия качества</h3>
+                    <p>Все товары сертифицированы. Гарантия до 5 лет</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>💸 Выгодные цены</h3>
+                    <p>Скидки до 30% для постоянных клиентов</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="price-section">
+            <h2>Популярные товары</h2>
+    <div class="container" itemscope itemtype="https://schema.org/Product">
+        <h1 itemprop="name">Прайс-лист на туристическое и спортивное снаряжение</h1>
+        
+        <div itemprop="description">
+            <p>Актуальные цены на туристическое снаряжение, рюкзаки, палатки, снаряжение для сплава и снегоходов. Цены указаны в рублях.</p>
+        </div>
+        
+        <h2>Туристическое снаряжение</h2>
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>Наименование</th>
+                    <th>Цена</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="category-row">
+                    <td colspan="3">Рюкзаки</td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">1</td>
+                    <td itemprop="name">Рюкзак туристический М-65 (V=65 л)</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">3740</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="price">2985</td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">2</td>
+                    <td itemprop="name">Рюкзак туристический М-85 (V=85 л)</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">4510</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="price">3305</td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">3</td>
+                    <td itemprop="name">Рюкзак туристический М-100 (V=100 л)</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">4760</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="price">3375</td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">4</td>
+                    <td itemprop="name">Рюкзак туристический М-120 (V=120 л)</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">4900</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="price">3460</td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">5</td>
+                    <td itemprop="name">Рюкзак "Лесной" (V=30 л)</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">1360</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">6</td>
+                    <td itemprop="name">Рюкзак "Таёжный" (V=45 л)</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">1640</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">7</td>
+                    <td itemprop="name">Рюкзак "Полевой"</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">1810</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">8</td>
+                    <td itemprop="name">Рюкзак "Ориент" (V=40 л)</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">4480</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">9</td>
+                    <td itemprop="name">Рюкзак "Волга" (V=25 л)</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">3320</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">10</td>
+                    <td itemprop="name">Рюкзак "Фаворит" (V=55 л)</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">6370</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">11</td>
+                    <td itemprop="name">Рюкзак "Сталкер" (V=19 л)</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">3080</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                
+                <tr class="category-row">
+                    <td colspan="3">Спальные мешки и системы</td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">12</td>
+                    <td itemprop="name">Система учебно-тренировочная</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">1960</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td></td>
+                    <td itemprop="name">Система учебно-тренировочная люкс</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">2240</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td></td>
+                    <td class="price">1905</td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td></td>
+                    <td itemprop="name">Спальный мешок-одеяло 75х200</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">2130</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td>14</td>
+                    <td itemprop="name">Спальный мешок-одеяло 90х220</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">3780</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="price">3560</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="price">3350</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td></td>
+                    <td class="price">2145</td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td></td>
+                    <td itemprop="name">Спальный мешок-одеяло 75х200 с подголовником</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">2340</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                
+                <tr class="category-row">
+                    <td colspan="3">Тенты и аксессуары</td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">16</td>
+                    <td itemprop="name">Сидуха кемпинговая</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">140</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">17</td>
+                    <td itemprop="name">Тент "Бивак" (3х3 м)</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">3080</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">18</td>
+                    <td itemprop="name">Тент "Бивак" (4х3 м)</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">3810</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">19</td>
+                    <td itemprop="name">Тент "Бивак" (5х3 м)</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">4550</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">20</td>
+                    <td itemprop="name">Тент "Бивак" (4х6 м)</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">7280</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">21</td>
+                    <td itemprop="name">Тент "Бивак" (5х6 м)</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">7675</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">22</td>
+                    <td itemprop="name">Тент "Бивак" (6х6 м)</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">9060</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">23</td>
+                    <td itemprop="name">Тент "Бивак" (6х8 м)</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">11060</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">24</td>
+                    <td itemprop="name">Баня туристская 2х2х2м</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">4565</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">25</td>
+                    <td itemprop="name">Баня туристская 2,5х2,5х2м</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">5310</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">26</td>
+                    <td itemprop="name">Чехол под коврик</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">280</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">27</td>
+                    <td itemprop="name">Кошелек нагрудный</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">350</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">28</td>
+                    <td itemprop="name">Чехол на рюкзак непромокаемый</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">365</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>Спортивное снаряжение</h2>
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>Наименование</th>
+                    <th>Цена</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">29</td>
+                    <td itemprop="name">Чехол для бетовых лыж</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">955</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">30</td>
+                    <td itemprop="name">Связки для лыж</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">115</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">31</td>
+                    <td itemprop="name">Связки для горных лыж</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">140</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">32</td>
+                    <td itemprop="name">Чехол для лыж (на 2-3 пары)</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">1905</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">33</td>
+                    <td itemprop="name">Чехол для лыжероллеров</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">770</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">34</td>
+                    <td itemprop="name">Темляк для лыжных палок</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">295</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>Снаряжение для сплава</h2>
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>Наименование</th>
+                    <th>Цена</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="category-row">
+                    <td colspan="3">Аксессуары для байдарок</td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">35</td>
+                    <td itemprop="name">Оболочка для байдарки Таймень-2</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">21830</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">36</td>
+                    <td itemprop="name">Оболочка для байдарки Таймень-3</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">24710</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">37</td>
+                    <td itemprop="name">Оболочка для байдарки Салют-2</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">22960</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">38</td>
+                    <td itemprop="name">Оболочка для байдарки Салют-3</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">25680</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                
+                <tr class="category-row">
+                    <td colspan="3">Катамараны и принадлежности</td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">51</td>
+                    <td itemprop="name">Катамаран "Стерх" 2 базовый(без рамы)</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">61460</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">52</td>
+                    <td itemprop="name">Катамаран "Стерх" 4 базовый(без рамы)</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">80965</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">53</td>
+                    <td itemprop="name">Катамаран "Стерх" 6 базовый(без рамы)</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">94305</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>Аксессуары для снегоходов и квадроциклов</h2>
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>Наименование</th>
+                    <th>Цена</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">148</td>
+                    <td itemprop="name">Чехол для снегохода "Тайга"</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">3150</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="price">4160</td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">149</td>
+                    <td itemprop="name">Чехол для снегохода "Буран-А"</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">3110</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="price">4200</td>
+                </tr>
+                <tr itemscope itemtype="https://schema.org/Product">
+                    <td itemprop="sku">150</td>
+                    <td itemprop="name">Чехол для снегохода "Буран АД"</td>
+                    <td class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">3390</span> <span itemprop="priceCurrency">RUB</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="price">4410</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="last-update" itemprop="offers" itemscope itemtype="https://schema.org/AggregateOffer">
+            <meta itemprop="lowPrice" content="115">
+            <meta itemprop="highPrice" content="94305">
+            <meta itemprop="priceCurrency" content="RUB">
+            <meta itemprop="offerCount" content="128">
+            <p><small>Последнее обновление: <time datetime="2025-05-05">5 мая 2025 года</time></small></p>
+        </div>
+    </div>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Туристическое и спортивное снаряжение",
+      "description": "Актуальные цены на туристическое снаряжение, рюкзаки, палатки, снаряжение для сплава и снегоходов",
+      "offers": {
+        "@type": "AggregateOffer",
+        "lowPrice": "115",
+        "highPrice": "94305",
+        "priceCurrency": "RUB",
+        "offerCount": "128"
+      }
+    }
+    </script>
+
+        </section>
+
+
+        <div class="seo-content">
+            <h2>Туристическое снаряжение для активного отдыха</h2>
+            <p>Интернет-магазин TrekS предлагает профессиональное снаряжение для туризма, альпинизма и активного отдыха. В нашем ассортименте:</p>
+            <ul>
+                <li>Туристические рюкзаки объемом от 25 до 120 литров</li>
+                <li>Палатки и тенты для разных условий эксплуатации</li>
+                <li>Спальные мешки и кемпинговое оборудование</li>
+                <li>Специализированное снаряжение для водного туризма</li>
+                <li>Аксессуары для снегоходов и квадроциклов</li>
+            </ul>
+            
+            <h3>Преимущества нашего магазина</h3>
+            <p>Мы работаем напрямую с производителями, что позволяет предлагать цены на 15-20% ниже рыночных. Все товары проходят предпродажную подготовку и проверку качества. Для наших клиентов:</p>
+            <ul>
+                <li>Бесплатная сборка и упаковка заказов</li>
+                <li>Консультации опытных инструкторов</li>
+                <li>Программа лояльности с накопительными скидками</li>
+                <li>Сервис проката снаряжения</li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- Схема для SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Store",
+        "name": "TrekS",
+        "image": "https://treks.2828.ru/images/logo.jpg",
+        "priceRange": "₽₽",
+        "telephone": "+7 (999) 123-45-67",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ул. Туристическая, 28",
+            "addressLocality": "Москва",
+            "postalCode": "123456",
+            "addressCountry": "RU"
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "20:00"
+        }
+    }
+    </script>
